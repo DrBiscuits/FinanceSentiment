@@ -1,15 +1,18 @@
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+const fs = require('fs');
+const path = require('path');
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  
   try {
-    const dataPath = join(process.cwd(), 'data', 'latest-rating.json');
+    const dataPath = path.join(process.cwd(), 'data', 'latest-rating.json');
     
-    if (!existsSync(dataPath)) {
+    if (!fs.existsSync(dataPath)) {
       return res.status(200).json({ error: 'No ratings yet' });
     }
     
-    const data = JSON.parse(readFileSync(dataPath, 'utf8'));
+    const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     
     // Convert screenshot path to web URL
     if (data.date) {
@@ -20,4 +23,4 @@ export default function handler(req, res) {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-}
+};

@@ -1,9 +1,12 @@
-import { readdirSync, readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+const fs = require('fs');
+const path = require('path');
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  
   try {
-    const ratingsPath = join(process.cwd(), 'data', 'ratings');
+    const ratingsPath = path.join(process.cwd(), 'data', 'ratings');
     
     // Generate dates for last 7 days
     const today = new Date();
@@ -19,10 +22,10 @@ export default function handler(req, res) {
     const images = [];
     
     for (const date of dates) {
-      const ratingFile = join(ratingsPath, `${date}.json`);
+      const ratingFile = path.join(ratingsPath, `${date}.json`);
       
-      if (existsSync(ratingFile)) {
-        const data = JSON.parse(readFileSync(ratingFile, 'utf8'));
+      if (fs.existsSync(ratingFile)) {
+        const data = JSON.parse(fs.readFileSync(ratingFile, 'utf8'));
         ratings.push(data.rating);
         images.push(`/screenshots/${date}-screenshot.png`);
       } else {
@@ -35,4 +38,4 @@ export default function handler(req, res) {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-}
+};
