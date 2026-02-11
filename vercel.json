@@ -9,19 +9,19 @@
   "routes": [
     {
       "src": "/api/latest-rating",
-      "dest": "/api/latest-rating.js"
+      "dest": "api/latest-rating.js"
     },
     {
       "src": "/api/history-7days",
-      "dest": "/api/history.js"
+      "dest": "api/history.js"
     },
     {
       "src": "/screenshots/(.*)",
-      "dest": "/public/screenshots/$1"
+      "dest": "public/screenshots/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/index.html"
+      "dest": "public/index.html"
     }
   ]
 }
