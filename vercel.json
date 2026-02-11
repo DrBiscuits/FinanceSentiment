@@ -4,28 +4,20 @@
     {
       "src": "api/**/*.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/latest-rating",
-      "dest": "/api/latest-rating.js"
-    },
-    {
-      "src": "/api/history-7days",
-      "dest": "/api/history.js"
+      "src": "/api/(.*)",
+      "dest": "api/$1"
     },
     {
       "src": "/screenshots/(.*)",
-      "dest": "/public/screenshots/$1"
+      "dest": "screenshots/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "index.html"
     }
   ]
 }
