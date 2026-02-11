@@ -1,0 +1,10 @@
+{
+  "name": "yahoo-finance-sentiment",
+  "version": "1.0.0",
+  "description": "Daily facial expression sentiment analysis of Yahoo Finance photos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
