@@ -1,0 +1,12 @@
+# OpenClaw workspace files
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+memory/
+parlay_monitor.js
+x402/
+yahoo-finance-sentiment/
