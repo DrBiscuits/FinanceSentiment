@@ -198,6 +198,119 @@
       font-weight: 500;
       color: #1a73e8;
     }
+
+    .subscribe-section {
+      margin-top: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 32px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e9ecef;
+      text-align: center;
+    }
+
+    .subscribe-section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #212529;
+      margin-bottom: 8px;
+    }
+
+    .subscribe-section p {
+      color: #5f6368;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .subscribe-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .subscribe-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border: 2px solid #e9ecef;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #212529;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .subscribe-btn:hover {
+      border-color: #1a73e8;
+      background: #f8f9fa;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(26, 115, 232, 0.15);
+    }
+
+    .subscribe-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content h3 {
+      color: #1a73e8;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    .modal-content p {
+      color: #5f6368;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .modal-close {
+      padding: 10px 24px;
+      background: #1a73e8;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: #1557b0;
+    }
   </style>
 </head>
 <body>
@@ -218,6 +331,39 @@
           <div class="spinner"></div>
         </div>
       </div>
+    </div>
+
+    <div class="subscribe-section">
+      <h2>Get Daily Updates</h2>
+      <p>Subscribe to receive daily sentiment ratings directly on your preferred platform</p>
+      <div class="subscribe-buttons">
+        <button class="subscribe-btn" onclick="showComingSoon('Telegram')">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+          </svg>
+          Telegram
+        </button>
+        <button class="subscribe-btn" onclick="showComingSoon('WhatsApp')">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
+          </svg>
+          WhatsApp
+        </button>
+        <button class="subscribe-btn" onclick="showComingSoon('Phone')">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+          </svg>
+          Phone
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="comingSoonModal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3>🚀 Coming Soon!</h3>
+      <p id="modalText">Subscriptions via this platform are coming soon. Check back later!</p>
+      <button class="modal-close" onclick="closeModal()">Got it</button>
     </div>
   </div>
 
@@ -425,6 +571,19 @@
     // Load on page load and refresh every 5 minutes
     loadLatestRating();
     setInterval(loadLatestRating, 300000);
+
+    // Modal functions
+    function showComingSoon(platform) {
+      const modal = document.getElementById('comingSoonModal');
+      const modalText = document.getElementById('modalText');
+      modalText.textContent = `${platform} subscriptions are coming soon! Check back later for daily sentiment updates.`;
+      modal.classList.add('show');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('comingSoonModal');
+      modal.classList.remove('show');
+    }
   </script>
 </body>
 </html>
