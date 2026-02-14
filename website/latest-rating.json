@@ -1,8 +1,8 @@
 {
   "rating": 5,
-  "date": "2026-02-13",
-  "analysis": "Today's Yahoo Finance main photo shows a grocery store scene (H-Mart) with multiple shoppers going about their daily routines. The sentiment is distinctly neutral, reflecting neither optimism nor concern about market conditions. Visible individuals include a foreground shopper looking down at phone with neutral/distracted expression, and background shoppers moving through aisles normally with no visible stress. The scene conveys business-as-usual consumer behavior - no one displays obvious stress or anxiety that might indicate market fear, but also no visible joy or positive energy suggesting confidence. With markets showing modest declines (S&P down 0.17%, Dow down 0.21%, Nasdaq down 0.41%), the photo highlights steady consumer spending and routine economic activity. This is neither bullish nor bearish - purely neutral ground, exactly a 5/10.",
-  "screenshot_path": "/home/bradbot/.openclaw/workspace/yahooFinance/5/2026-02-13-screenshot.png",
+  "date": "2026-02-14",
+  "analysis": "The main photo shows multiple shoppers in a grocery store, predominantly wearing dark winter coats. Facial expressions and body language suggest neutral to slightly concerned sentiment - shoppers appear focused and methodical rather than confident or distressed. No visible smiles or expressions of optimism. The image reflects cautious consumer behavior: people shopping carefully with attention to value. Market context shows slight declines (S&P -0.17%, Dow -0.21%, Nasdaq -0.41%), and the visual sentiment aligns with this modest negativity. Overall: steady, careful consumption in uncertain times rather than panic or confidence.",
+  "screenshot_path": "/home/bradbot/.openclaw/workspace/yahooFinance/5/2026-02-14-screenshot.png",
   "screenshot": "/latest-screenshot.png",
-  "timestamp": 1739458800000
+  "timestamp": 1739545200000
 }
