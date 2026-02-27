@@ -159,11 +159,49 @@
       border-top: 1px solid #e9ecef;
     }
 
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
     .chart-section h3 {
       color: #1a73e8;
-      margin-bottom: 24px;
+      margin: 0;
       font-size: 16px;
       font-weight: 600;
+    }
+
+    .chart-toggle {
+      display: flex;
+      gap: 8px;
+      background: #f8f9fa;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+    }
+
+    .toggle-btn {
+      padding: 8px 16px;
+      border: none;
+      background: transparent;
+      color: #5f6368;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .toggle-btn:hover {
+      color: #212529;
+    }
+
+    .toggle-btn.active {
+      background: #ffffff;
+      color: #1a73e8;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
     #sentimentChart {
@@ -416,7 +454,13 @@
         </div>
 
         <div class="chart-section">
-          <h3>7-Day Sentiment Trend</h3>
+          <div class="chart-header">
+            <h3 id="chartTitle">7-Day Sentiment Trend</h3>
+            <div class="chart-toggle">
+              <button class="toggle-btn active" data-period="7" onclick="switchChartPeriod(7)">Week</button>
+              <button class="toggle-btn" data-period="30" onclick="switchChartPeriod(30)">Month</button>
+            </div>
+          </div>
           <canvas id="sentimentChart"></canvas>
         </div>
       `;
@@ -426,10 +470,30 @@
     }
 
     let sentimentChart = null;
+    let currentChartPeriod = 7;
+
+    function switchChartPeriod(period) {
+      currentChartPeriod = period;
+      
+      // Update toggle button states
+      document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.period) === period);
+      });
+      
+      // Update chart title
+      const chartTitle = document.getElementById('chartTitle');
+      if (chartTitle) {
+        chartTitle.textContent = period === 7 ? '7-Day Sentiment Trend' : '30-Day Sentiment Trend';
+      }
+      
+      // Reload chart with new period
+      loadChart();
+    }
 
     async function loadChart() {
       try {
-        const response = await fetch('/api/history-7days');
+        const endpoint = currentChartPeriod === 7 ? '/api/history-7days' : '/api/history-30days';
+        const response = await fetch(endpoint);
         if (!response.ok) throw new Error('No history available');
         
         const data = await response.json();
