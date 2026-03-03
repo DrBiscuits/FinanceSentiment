@@ -1,0 +1,22 @@
+Yahoo Finance Daily Expression Rating
+Date: 2026-03-03
+Rating: 3/10
+
+DESCRIPTION OF HERO IMAGE:
+The main hero image shows a stock exchange trading floor scene (likely NYSE), featuring a trader wearing glasses looking upward with a concerned expression. The background shows multiple trading screens and monitors. The secondary image shows a Middle Eastern cityscape with smoke/explosions, tied to the headline about oil surging due to Iran war conflict.
+
+FACIAL EXPRESSION & BODY LANGUAGE ANALYSIS:
+- The trader is gazing upward — a classic pose used by financial media to convey watching screens displaying falling prices
+- His expression is one of worry/concern — brow slightly furrowed, mouth set in a tense line
+- Body language appears tense and rigid, suggesting anxiety rather than relaxation
+- He appears to be monitoring developments with apprehension rather than excitement or optimism
+
+MARKET SENTIMENT ANALYSIS:
+The imagery paints a decidedly negative sentiment picture:
+- Geopolitical conflict imagery (smoke rising from buildings) paired with worried traders signals fear and uncertainty
+- The headline "Oil surges, and this conflict 'may be different'" amplifies the anxiety
+- Market data confirms the negativity: S&P 500 down -2.22%, Dow down -2.40%, Nasdaq down -2.43% — a broad, significant selloff
+- The Fed headline about rate cuts being "still possible" amid Iran war concerns adds policy uncertainty
+- CL=F (Crude Oil) up +8.59% — a fear-driven spike
+
+The combination of a worried trader's face, war imagery, and deeply red markets across the board suggests a fear-driven environment — not quite panic (which would be a 1-2), but clearly distressed and risk-off. This is a bad day on Wall Street driven by geopolitical escalation.
