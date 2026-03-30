@@ -1,0 +1,45 @@
+Yahoo Finance Daily Expression Rating - 2026-03-30
+=================================================
+
+RATING: 4/10
+
+MARKET DATA SNAPSHOT:
+- S&P 500: 6,383.17 (+0.22%)
+- Dow 30: 45,401.21 (+0.52%)
+- Nasdaq: 20,957.08 (+0.04%)
+- Russell 2000: 2,444.35 (-0.22%)
+- VIX: 29.95 (-3.54%) - still elevated
+- Gold: 4,554.80 (+0.67%) - safe haven buying
+- Bitcoin: 67,415.21 (+1.28%)
+- Crude Oil: $102.19 (+2.56%) - significant surge
+
+DOMINANT HEADLINES:
+1. "2 reasons oil prices are surging as Iran War enters 5th week"
+2. "Trump threatens Iran energy sites, Kharg Island amid war"
+3. "Oil, markets jittery after Trump floats idea to 'take the oil in Iran'"
+4. "Bessent: US to 'retake' Hormuz Strait control"
+5. "2 'Magnificent 7' stocks see stunning plunges"
+6. "Big Tech Stocks Rout Is Flashing Signals of a Turnaround"
+7. "Oil prices: Expect real market volatility if Red Sea conflict arises"
+
+SENTIMENT ANALYSIS:
+The market sentiment is decidedly negative, though not in panic mode. The page is dominated by news of the Iran War entering its fifth week, with oil prices surging above $100 per barrel amid threats to energy infrastructure and control of the Strait of Hormuz. These geopolitical tensions create significant uncertainty.
+
+Major concerns:
+- Ongoing Iran war escalation (5th week)
+- Oil shock potential with prices above $100
+- Trump threatening Iran energy sites
+- Red Sea conflict concerns
+- Tech sector weakness ("stunning plunges" in Mag 7 stocks)
+- High volatility expected
+
+Counterbalancing factors:
+- Major indexes holding slightly positive territory
+- VIX declining (though still elevated at ~30)
+- Some bargain hunting activity mentioned
+- Bitcoin showing resilience
+
+OVERALL TONE:
+Cautious and concerned. The market is showing resilience in the face of significant geopolitical risks, but the dominant narrative is one of uncertainty, war, oil shocks, and sector-specific weakness in technology stocks. The visual and textual tone conveys worry about escalation and economic impacts, placing sentiment firmly below neutral.
+
+Rating Rationale: 4/10 reflects below-neutral sentiment due to war escalation, oil shock concerns, tech weakness, and elevated fear indicators, but avoids extreme negativity (1-2) since markets aren't collapsing and some resilience is evident.
